@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  width: 320px;
+  color: #1f2937;
+  background: #f9fafb;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.api-section {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.api-section h2 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+}
+
+.api-section label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.api-row {
+  display: flex;
+  gap: 6px;
+}
+
+.api-row input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.api-row select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+  background: #ffffff;
+}
+
+.api-row button {
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.api-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.api-actions button {
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.api-status {
+  font-size: 11px;
+  color: #2563eb;
+}
+
+.api-note {
+  margin: 6px 0 0 0;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+textarea#toxic-definition-input,
+textarea#translate-into-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+  resize: vertical;
+}
+
+#translate-button {
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#translate-button:hover {
+  background: #0b1220;
+}
+
+.advanced-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 6px;
+}
+
+.advanced-section summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  list-style: none;
+}
+
+.advanced-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.advanced-section[open] summary {
+  margin-bottom: 8px;
+}
+
+.advanced-section .api-section {
+  border: none;
+  padding: 8px;
+  background: transparent;
+}

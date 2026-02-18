@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CommentDetoxGPT</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>CommentDetoxGPT</h1>
+      <div class="header-actions">
+        <button id="translate-button">Translate</button>
+      </div>
+    </header>
+    <main>
+      <details class="advanced-section">
+        <summary>Settings</summary>
+        <section class="api-section">
+          <h2>API Key</h2>
+          <label for="api-key-input">OpenAI API key</label>
+          <div class="api-row">
+            <input id="api-key-input" type="password" placeholder="sk-..." autocomplete="off" />
+            <button id="toggle-api-key" type="button" aria-label="Show API key">Show</button>
+          </div>
+          <div class="api-actions">
+            <button id="save-api-key" type="button">Save Key</button>
+            <button id="clear-api-key" type="button">Clear</button>
+            <span id="api-key-status" class="api-status" aria-live="polite"></span>
+          </div>
+          <p class="api-note">Stored locally in your browser. Not encrypted.</p>
+        </section>
+        <section class="api-section">
+          <h2>Model</h2>
+          <label for="model-select">OpenAI model</label>
+          <div class="api-row">
+            <select id="model-select"></select>
+          </div>
+          <div class="api-actions">
+            <button id="save-model" type="button">Save Model</button>
+            <span id="model-status" class="api-status" aria-live="polite"></span>
+          </div>
+        </section>
+        <section class="api-section">
+          <h2>Prompt</h2>
+          <label for="toxic-definition-input">Toxic Definition (Language that is...)</label>
+          <textarea id="toxic-definition-input" rows="2" placeholder="emotionally toxic or inflamatory in nature"></textarea>
+          <label for="translate-into-input">Translate into (Language that is...)</label>
+          <textarea id="translate-into-input" rows="2" placeholder="emotionally mature language without changing the intended meaning"></textarea>
+          <div class="api-actions">
+            <button id="save-prompt" type="button">Save Prompt</button>
+            <button id="reset-prompt" type="button">Reset</button>
+            <span id="prompt-status" class="api-status" aria-live="polite"></span>
+          </div>
+        </section>
+      </details>
+    </main>
+    <script src="appmeta.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

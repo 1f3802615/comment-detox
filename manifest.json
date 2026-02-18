@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "CommentDetoxGPT",
+  "version": "1.0",
+  "description": "A Chrome Extension that uses the ChatGPT API to translate toxic comments on web pages...",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://m.youtube.com/*",
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo-v2.png",
+      "32": "images/logo-v2.png"
+    }
+  },
+  "icons": {
+    "48": "images/logo-v2.png",
+    "128": "images/logo-v2.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/indicator-nontoxic.svg",
+        "images/indicator-toxic.svg"
+      ],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ]
+    }
+  ]
+}
