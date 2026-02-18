@@ -26,6 +26,16 @@ Choose the model you want, and choose your definitions of toxic and non-toxic la
 
 Hit `Translate`!
 
+## Example of Custom Prompt:
+
+![Alt text](images/screenshot_2026-02-18_01-55.png)
+
+||||====vvvvvvvvvvvvv====||||
+
+![Alt text](images/example2.png)
+
+😂
+
 ## Roadmap
 
 * Add auto-detox for a page through toggling popup button on and off on that page
